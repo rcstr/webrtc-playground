@@ -61,7 +61,14 @@ textarea {
     color: red;
 }
 
+.room-link {
+    color: #f00;
+    font-size: 18px;
+}
 
+.local-video {
+    margin-top: 15px;
+}
 
 
 
