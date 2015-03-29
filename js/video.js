@@ -1,3 +1,4 @@
+// TODO: remove jQuery
 $(function() {
     'use strict';
     navigator.getWebcam = (navigator.getUserMedia ||
