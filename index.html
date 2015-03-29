@@ -20,10 +20,43 @@
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
-        <p>Hello world! This is HTML5 Boilerplate.</p>
+        <div>
+            <div id="video-container">
+                Your Friend<video src="" id="their-video" class="their-video" autoplay></video>
+                <video src="" id="my-video" class="my-video" muted="false" autoplay></video>
+            </div>
+        </div>
+
+        <div>
+            <h2>Super simple PeerJS 2 person chat</h2>
+            <ol>
+                <li class="step-1">
+                    Please click 'allow' on the top of the screen so we can access your webcam and microphone for calls
+                    <span class="error">Failed to access the webcam and microphone. make sure to run this demo on a http server and click allow when asked for permission by the browser <a href="#" class="retry button">Try Again</a></span>
+                </li>
+                <li class="step-2">
+                    <span>Your id: <span data-my-id>...</span></span>
+                    <br>
+                    <span>Share this id with others so they can call you.</span>
+                    <br>
+                    <p><span class="subhead">Make a call</span>
+                        <form action="">
+                            <input type="text" name="friend-id" id="friend-id" placeholder="Call user id...">
+                            <input type="submit" value="Call">
+                        </form>
+                    </p>
+                </li>
+                <li class="step-3">
+                    currently in call with <span data-friend-id>...</span>
+                    <br>
+                    <a href="" data-end-call>End Call</a>
+                </li>
+            </ol>
+        </div>
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+        <script src="js/vendor/peer.min.js"></script>
 
         <script src="js/main.js"></script>
     </body>
