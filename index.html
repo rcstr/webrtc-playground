@@ -23,7 +23,7 @@
         <div>
             <div id="video-container">
                 Your Friend<video src="" id="their-video" class="their-video" autoplay></video>
-                <video src="" id="my-video" class="my-video" muted="false" autoplay></video>
+                <video src="" id="my-video" class="my-video" muted="true" autoplay></video>
             </div>
         </div>
 
@@ -32,7 +32,7 @@
             <ol>
                 <li class="step-1">
                     Please click 'allow' on the top of the screen so we can access your webcam and microphone for calls
-                    <span class="error">Failed to access the webcam and microphone. make sure to run this demo on a http server and click allow when asked for permission by the browser <a href="#" class="retry button">Try Again</a></span>
+                    <span class="error hidden">Failed to access the webcam and microphone. make sure to run this demo on a http server and click allow when asked for permission by the browser <a href="#" class="retry button" data-retry>Try Again</a></span>
                 </li>
                 <li class="step-2">
                     <span>Your id: <span data-my-id>...</span></span>
